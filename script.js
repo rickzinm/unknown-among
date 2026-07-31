@@ -107,22 +107,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ===== COUNTER ANIMATION =====
-function animateCounter(el, target, duration = 2000) {
-  const start = performance.now();
-  const startVal = 0;
-
-  function update(timestamp) {
-    const elapsed = timestamp - start;
-    const progress = Math.min(elapsed / duration, 1);
-    const eased = 1 - Math.pow(1 - progress, 3);
-    el.textContent = Math.floor(startVal + (target - startVal) * eased);
-    if (progress < 1) requestAnimationFrame(update);
-    else el.textContent = target;
-  }
-
-  requestAnimationFrame(update);
-}
-
 // ===== INTERSECTION OBSERVER =====
 const observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
 
@@ -130,20 +114,12 @@ const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
-
-      // Counter
-      if (entry.target.classList.contains('stat-item')) {
-        const numEl = entry.target.querySelector('.stat-number');
-        const target = parseInt(numEl.getAttribute('data-target'));
-        animateCounter(numEl, target);
-      }
-
       revealObserver.unobserve(entry.target);
     }
   });
 }, observerOptions);
 
-document.querySelectorAll('.about-card, .rule-item, .tier, .stat-item, .reveal').forEach(el => {
+document.querySelectorAll('.about-card, .rule-item, .tier, .reveal').forEach(el => {
   revealObserver.observe(el);
 });
 
@@ -203,29 +179,6 @@ const cardObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 
 document.querySelectorAll('[data-delay]').forEach(el => cardObserver.observe(el));
-
-// ===== TERMINAL TYPING EFFECT =====
-const terminal = document.querySelector('.terminal-block');
-if (terminal) {
-  const termObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const questions = document.querySelectorAll('.t-question');
-        questions.forEach((q, i) => {
-          q.style.opacity = '0';
-          q.style.transform = 'translateX(-8px)';
-          q.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
-          setTimeout(() => {
-            q.style.opacity = '1';
-            q.style.transform = 'translateX(0)';
-          }, 600 + i * 180);
-        });
-        termObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.2 });
-  termObserver.observe(terminal);
-}
 
 // ===== PROCESS STEP ANIMATE =====
 const psObserver = new IntersectionObserver((entries) => {

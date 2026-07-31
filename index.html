@@ -3,28 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>妥 Unknown Among Us</title>
+  <title>ㇲ Hexer Among Us</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Metal+Mania&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- Névoa de fundo -->
+  <div class="fog"></div>
+
   <!-- Partículas de fundo -->
   <div class="particles" id="particles"></div>
-
-  <!-- Scanlines overlay -->
-  <div class="scanlines"></div>
-
-  <!-- Noise overlay -->
-  <div class="noise"></div>
 
   <!-- NAV -->
   <nav class="navbar" id="navbar">
     <div class="nav-logo">
-      <span class="symbol">妥</span>
-      <span class="nav-title">UNKNOWN AMONG US</span>
+      <span class="symbol">ㇲ</span>
+      <span class="nav-title">HEXER AMONG US</span>
     </div>
     <ul class="nav-links">
       <li><a href="#sobre">SOBRE</a></li>
@@ -39,26 +38,26 @@
 
   <!-- HERO -->
   <section class="hero" id="home">
-    <div class="hero-bg-text">UNKNOWN</div>
+    <div class="hero-bg-text">HEXER</div>
 
     <div class="hero-content">
       <div class="symbol-container">
         <div class="symbol-ring ring-1"></div>
         <div class="symbol-ring ring-2"></div>
         <div class="symbol-ring ring-3"></div>
-        <img src="logo.png" alt="Unknown Among Us" class="hero-logo" />
+        <img src="logo.png" alt="Hexer Among Us" class="hero-logo" />
       </div>
 
       <div class="hero-text">
         <div class="hero-tag">— GRUPO OFICIAL —</div>
         <h1 class="hero-title">
-          <span class="line-1">UNKNOWN</span>
+          <span class="line-1">HEXER</span>
           <span class="line-2">AMONG US</span>
         </h1>
         <p class="hero-sub">Onde os impostores são desconhecidos.<br>Onde os tripulantes nunca dormem.</p>
         <div class="hero-buttons">
           <a href="#triagem" class="btn btn-primary">
-            <span class="btn-icon">妥</span>
+            <span class="btn-icon">ㇲ</span>
             FAZER TRIAGEM
           </a>
           <a href="#sobre" class="btn btn-secondary">SAIBA MAIS</a>
@@ -91,7 +90,7 @@
       <div class="about-card featured" data-delay="150">
         <div class="card-badge">DESTAQUE</div>
         <div class="card-icon">
-          <div class="symbol-small">妥</div>
+          <div class="symbol-small">ㇲ</div>
         </div>
         <h3>NOSSA MISSÃO</h3>
         <p>Criar o ambiente mais seguro e divertido na comunidade do Among Us. Triagem rigorosa para manter a qualidade e segurança do grupo.</p>
@@ -107,32 +106,6 @@
         </div>
         <h3>ALTA INTENSIDADE</h3>
         <p>Partidas épicas, discussões estratégicas e momentos marcantes. Cada sessão é uma nova batalha entre impostores e tripulantes.</p>
-      </div>
-    </div>
-
-    <div class="stats-row">
-      <div class="stat-item" data-count="500">
-        <span class="stat-number" data-target="15">0</span>
-        <span class="stat-plus">+</span>
-        <span class="stat-label">MEMBROS</span>
-      </div>
-      <div class="stat-divider">|</div>
-      <div class="stat-item" data-count="1000">
-        <span class="stat-number" data-target="1000">0</span>
-        <span class="stat-plus">+</span>
-        <span class="stat-label">PARTIDAS</span>
-      </div>
-      <div class="stat-divider">|</div>
-      <div class="stat-item" data-count="2">
-        <span class="stat-number" data-target="">0</span>
-        <span class="stat-plus">+</span>
-        <span class="stat-label">Dias de preparo</span>
-      </div>
-      <div class="stat-divider">|</div>
-      <div class="stat-item" data-count="100">
-        <span class="stat-number" data-target="100">0</span>
-        <span class="stat-plus">%</span>
-        <span class="stat-label">DEDICAÇÃO</span>
       </div>
     </div>
   </section>
@@ -201,11 +174,11 @@
 
     <div class="hierarchy">
       <div class="tier tier-1" data-delay="0">
-        <div class="tier-badge">妥</div>
+        <div class="tier-badge">ㇲ</div>
         <div class="tier-info">
           <span class="tier-rank">RANK I</span>
           <h3>FUNDADOR</h3>
-          <p>Criadores e líderes supremos do Unknown Among Us. Detentores do símbolo 妥.</p>
+          <p>Criadores e líderes supremos do Hexer Among Us. Detentores do símbolo ㇲ.</p>
         </div>
         <div class="tier-glow"></div>
       </div>
@@ -233,7 +206,7 @@
         <div class="tier-info">
           <span class="tier-rank">RANK IV</span>
           <h3>MEMBRO</h3>
-          <p>Aprovados na triagem e parte oficial da família Unknown.</p>
+          <p>Aprovados na triagem e parte oficial da família Hexer.</p>
         </div>
       </div>
     </div>
@@ -263,7 +236,7 @@
               <span class="req-status">✓</span>
               <div>
                 <strong>Idade mínima</strong>
-                <span>15 anos ou mais</span>
+                <span>13 anos ou mais</span>
               </div>
             </li>
             <li class="req-item req-ok">
@@ -338,80 +311,15 @@
             <div class="process-step">
               <div class="ps-dot final"></div>
               <div class="ps-content">
-                <strong>妥 BEM-VINDO</strong>
+                <strong>ㇲ BEM-VINDO</strong>
                 <span>Aprovado? Você entra no grupo e recebe as boas-vindas</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- COLUNA DIREITA — TERMINAL -->
-      <div class="triagem-col">
-        <div class="triagem-block terminal-block reveal">
-          <div class="block-header">
-            <span class="block-icon">⬡</span>
-            <h3>PERGUNTAS DA TRIAGEM</h3>
-          </div>
-          <div class="terminal">
-            <div class="terminal-bar">
-              <span class="t-dot t-red"></span>
-              <span class="t-dot t-yellow"></span>
-              <span class="t-dot t-green"></span>
-              <span class="t-title">triagem_unknown.exe</span>
-            </div>
-            <div class="terminal-body" id="terminalBody">
-              <div class="t-line"><span class="t-prefix">sistema</span><span class="t-text"> Iniciando protocolo de triagem...</span></div>
-              <div class="t-line"><span class="t-prefix">sistema</span><span class="t-text"> Conectando ao servidor Unknown Among Us...</span></div>
-              <div class="t-line t-gap"></div>
-              <div class="t-line t-question" data-q="1">
-                <span class="t-num">[01]</span>
-                <span class="t-text">Qual é o seu nome?</span>
-              </div>
-              <div class="t-line t-question" data-q="2">
-                <span class="t-num">[02]</span>
-                <span class="t-text">Quantos anos você tem?</span>
-              </div>
-              <div class="t-line t-question" data-q="3">
-                <span class="t-num">[03]</span>
-                <span class="t-text">Em qual plataforma você joga Among Us?</span>
-              </div>
-              <div class="t-line t-question" data-q="4">
-                <span class="t-num">[04]</span>
-                <span class="t-text">Faz parte de algum outro  grupo?</span>
-              </div>
-              <div class="t-line t-question" data-q="5">
-                <span class="t-num">[05]</span>
-                <span class="t-text">Você prefere jogar como Impostor ou Tripulante? Por quê?</span>
-              </div>
-              <div class="t-line t-question" data-q="6">
-                <span class="t-num">[06]</span>
-                <span class="t-text">Você já foi banido de algum grupo de Among Us? Se sim, por quê?</span>
-              </div>
-              <div class="t-line t-question" data-q="7">
-                <span class="t-num">[07]</span>
-                <span class="t-text">Você aceita todas as regras do grupo Unknown Among Us?</span>
-              </div>
-              <div class="t-line t-question" data-q="8">
-                <span class="t-num">[08]</span>
-                <span class="t-text">Por que quer entrar no Unknown Among Us?</span>
-              </div>
-              <div class="t-line t-gap"></div>
-              <div class="t-line">
-                <span class="t-prefix">sistema</span>
-                <span class="t-text"> Envie suas respostas via WhatsApp para um admin.</span>
-              </div>
-              <div class="t-line t-blink">
-                <span class="t-prefix">aguardando</span>
-                <span class="t-text"> <span class="t-cursor">█</span></span>
               </div>
             </div>
           </div>
 
           <!-- CTA -->
-          <div class="terminal-cta">
-            <a href="https://wa.me/?text=Ol%C3%A1!%20Quero%20participar%20do%20grupo%20Unknown%20Among%20Us%20%F0%9F%8E%AE%20%E5%A6%A5"
+          <div class="triagem-cta">
+            <a href="https://wa.me/?text=Ol%C3%A1!%20Quero%20participar%20do%20grupo%20Hexer%20Among%20Us%20%F0%9F%8E%AE%20%E3%87%B2"
                class="btn btn-primary btn-large whatsapp-btn"
                target="_blank" rel="noopener">
               <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
@@ -422,6 +330,7 @@
             <p class="cta-note">* Respondido por um admin em até 24h</p>
           </div>
         </div>
+
       </div>
 
     </div>
@@ -429,10 +338,10 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer-symbol">妥</div>
+    <div class="footer-symbol">ㇲ</div>
     <div class="footer-content">
-      <p class="footer-name">UNKNOWN AMONG US</p>
-      <p class="footer-copy">© 2026 · Todos os direitos reservados · Grupo Unknown Among Us</p>
+      <p class="footer-name">HEXER AMONG US</p>
+      <p class="footer-copy">© 2026 · Todos os direitos reservados · Grupo Hexer Among Us</p>
     </div>
     <div class="footer-line"></div>
   </footer>
