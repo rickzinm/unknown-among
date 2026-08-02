@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ㇲ Hexer Among Us — Regras</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Metal+Mania&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Névoa de fundo -->
+  <div class="fog"></div>
+
+  <!-- Partículas de fundo -->
+  <div class="particles" id="particles"></div>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="symbol">ㇲ</span>
+      <span class="nav-title">HEXER AMONG US</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html#sobre">SOBRE</a></li>
+      <li><a href="regras.html">REGRAS</a></li>
+      <li><a href="index.html#membros">MEMBROS</a></li>
+      <li><a href="index.html#triagem" class="nav-cta">ENTRAR</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- REGRAS DO GRUPO -->
+  <section class="section" id="regras-grupo">
+    <img src="crewmates/purple.svg" alt="" class="crewmate-decor" style="top:10px; left:1%; --cm-w:180px; --cm-w-m:95px; --cm-rot:-8deg; --cm-delay:0.3s;">
+    <img src="crewmates/yellow.svg" alt="" class="crewmate-decor" style="top:5px; right:1%; --cm-w:180px; --cm-w-m:95px; --cm-rot:9deg; --cm-delay:1s;">
+
+    <a href="index.html" class="back-link">← VOLTAR AO INÍCIO</a>
+
+    <div class="section-header">
+      <span class="section-tag">COMUNIDADE</span>
+      <h2 class="section-title">REGRAS DO GRUPO</h2>
+      <div class="title-line"></div>
+      <p class="section-desc">Como esperamos que você trate os outros membros, dentro e fora das partidas.</p>
+    </div>
+
+    <div class="rules-grid">
+      <div class="rule-item" data-delay="0">
+        <div class="rule-number">01</div>
+        <div class="rule-content">
+          <h4>RESPEITO ACIMA DE TUDO</h4>
+          <p>Trate todos os membros com respeito. Ofensas, provocações excessivas, desrespeito ou qualquer atitude que prejudique a convivência não serão tolerados.</p>
+        </div>
+      </div>
+      <div class="rule-item" data-delay="60">
+        <div class="rule-number">02</div>
+        <div class="rule-content">
+          <h4>RESPEITE A ADMINISTRAÇÃO</h4>
+          <p>As decisões e orientações dos admins devem ser respeitadas. Respeite a hierarquia.</p>
+        </div>
+      </div>
+      <div class="rule-item" data-delay="120">
+        <div class="rule-number">03</div>
+        <div class="rule-content">
+          <h4>BOT LIBERADO PARA MEMBROS</h4>
+          <p>O uso deve ser moderado. É proibido flood de comandos e uso indevido.</p>
+        </div>
+      </div>
+      <div class="rule-item" data-delay="180">
+        <div class="rule-number">04</div>
+        <div class="rule-content">
+          <h4>SEM FLOOD OU SPAM</h4>
+          <p>É proibido qualquer conteúdo que atrapalhe o funcionamento do grupo.</p>
+        </div>
+      </div>
+      <div class="rule-item" data-delay="240">
+        <div class="rule-number">05</div>
+        <div class="rule-content">
+          <h4>SEM CONTEÚDO +18</h4>
+          <p>É estritamente proibido mensagens de cunho sexual, figurinhas, imagens e vídeos com conteúdo +18.</p>
+        </div>
+      </div>
+      <div class="rule-item" data-delay="300">
+        <div class="rule-number">06</div>
+        <div class="rule-content">
+          <h4>SEM DIVULGAÇÃO DE OUTROS GRUPOS</h4>
+          <p>Não é permitida a divulgação de outros grupos, comunidades ou links externos.</p>
+        </div>
+      </div>
+      <div class="rule-item" data-delay="360">
+        <div class="rule-number">07</div>
+        <div class="rule-content">
+          <h4>SEM DIVULGAÇÃO DE CÓD. DE SALAS</h4>
+          <p>Proibido compartilhar código de sala com amigos ou com outros grupos, sem a autorização de um admin.</p>
+        </div>
+      </div>
+      <div class="rule-item" data-delay="420">
+        <div class="rule-number">08</div>
+        <div class="rule-content">
+          <h4>INATIVIDADE</h4>
+          <p>Membros inativos por longos períodos estarão sujeitos a banimento do grupo. Participe de ao menos uma partida semanal.</p>
+        </div>
+      </div>
+      <div class="rule-item" data-delay="480">
+        <div class="rule-number">09</div>
+        <div class="rule-content">
+          <h4>ADVERTÊNCIAS</h4>
+          <p>Caso alguma regra do grupo seja quebrada, o membro será advertido. Após 3 advertências, será removido do grupo permanentemente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REGRAS DO AMONG US -->
+  <section class="section dark-section" id="regras-among-us">
+    <img src="crewmates/red.svg" alt="" class="crewmate-decor" style="top:10px; left:1%; --cm-w:180px; --cm-w-m:95px; --cm-rot:-9deg; --cm-delay:0.5s;">
+    <img src="crewmates/black.svg" alt="" class="crewmate-decor" style="top:5px; right:1%; --cm-w:180px; --cm-w-m:95px; --cm-rot:9deg; --cm-delay:1.3s;">
+
+    <div class="section-header">
+      <span class="section-tag">GAMEPLAY 🛸</span>
+      <h2 class="section-title">REGRAS DAS PARTIDAS</h2>
+      <div class="title-line"></div>
+      <p class="section-desc">Jogue limpo, participe e aproveite as partidas. Competitividade faz parte; estragar a diversão dos outros, não. 🖤🎮</p>
+    </div>
+
+    <div class="rules-grid">
+      <div class="rule-item" data-delay="0">
+        <div class="rule-number">01</div>
+        <div class="rule-content">
+          <h4>SÍMBOLO OBRIGATÓRIO</h4>
+          <p>É obrigatório usar o símbolo ㇲ nas salas.</p>
+        </div>
+      </div>
+      <div class="rule-item" data-delay="100">
+        <div class="rule-number">02</div>
+        <div class="rule-content">
+          <h4>PROIBIDO X9</h4>
+          <p>É proibido realizar x9. Foi descoberto? Aceite e deixe seus parceiros jogarem. Também é proibido divulgar informações de partidas em andamento.</p>
+        </div>
+      </div>
+      <div class="rule-item" data-delay="200">
+        <div class="rule-number">03</div>
+        <div class="rule-content">
+          <h4>SEM TROLL OU ZÉ-BOTÃO</h4>
+          <p>Não atrapalhe propositalmente as partidas. Trollagem, fingir que está AFK, atitudes antijogo e comportamento de "zé-botão" não serão permitidos.</p>
+        </div>
+      </div>
+      <div class="rule-item" data-delay="300">
+        <div class="rule-number">04</div>
+        <div class="rule-content">
+          <h4>ZERO TRAPAÇAS</h4>
+          <p>Qualquer tipo de hack, cheat, modificação indevida ou trapaça é proibido. Sujeito a ban permanente.</p>
+        </div>
+      </div>
+      <div class="rule-item" data-delay="400">
+        <div class="rule-number">05</div>
+        <div class="rule-content">
+          <h4>RESPEITO ENTRE OS JOGADORES</h4>
+          <p>Mantenha o respeito durante toda a partida. Discussões fazem parte do jogo, mas ofensas e desrespeito aos demais jogadores não.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <img src="crewmates/green.svg" alt="" class="crewmate-decor" style="top:10px; left:3%; --cm-w:120px; --cm-w-m:64px; --cm-rot:-6deg; --cm-delay:0.7s;">
+    <img src="crewmates/amy.webp" alt="" class="crewmate-decor" style="top:10px; right:3%; --cm-w:110px; --cm-w-m:60px; --cm-rot:7deg; --cm-delay:1.6s;">
+    <div class="footer-symbol">ㇲ</div>
+    <div class="footer-content">
+      <p class="footer-name">HEXER AMONG US</p>
+      <p class="footer-copy">© 2026 · Todos os direitos reservados · Grupo Hexer Among Us</p>
+    </div>
+    <div class="footer-line"></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
