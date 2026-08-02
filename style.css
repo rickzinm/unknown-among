@@ -70,7 +70,6 @@ body {
   color: var(--white);
   font-family: var(--font-body);
   overflow-x: hidden;
-  cursor: none;
 }
 
 /* ===== SCROLLBAR ===== */
@@ -1158,29 +1157,6 @@ body {
   60% { transform: skewX(-2deg) translateX(-2px); }
   80% { transform: skewX(2deg) translateX(2px); }
   100% { transform: none; filter: none; }
-}
-
-/* ===== CURSOR ===== */
-.cursor-dot {
-  width: 6px; height: 6px;
-  background: white;
-  border-radius: 50%;
-  position: fixed;
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: transform 0.1s;
-}
-
-.cursor-ring {
-  width: 30px; height: 30px;
-  border: 1px solid rgba(255,255,255,0.5);
-  border-radius: 50%;
-  position: fixed;
-  pointer-events: none;
-  z-index: 9998;
-  transform: translate(-50%, -50%);
-  transition: all 0.15s ease;
 }
 
 /* ===== REVEAL ANIMATION ===== */
