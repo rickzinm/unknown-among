@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rickzinm.github.io/unknown-among/sitemap.xml
+Sitemap: https://hexer-amongus.site/sitemap.xml
