@@ -566,9 +566,9 @@ body {
 /* ===== CONFIG PAGE ===== */
 .config-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  max-width: 1000px;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 0 60px;
 }
@@ -584,30 +584,31 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  padding: 13px 16px;
+  padding: 18px 20px;
   border: 1px solid transparent;
   transition: all 0.3s;
 }
 
 .spec-item:hover {
-  border-color: rgba(255,255,255,0.1);
-  background: rgba(255,255,255,0.03);
+  border-color: rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.04);
 }
 
 .spec-label {
-  font-size: 0.85rem;
-  color: rgba(255,255,255,0.5);
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.55);
   font-weight: 300;
 }
 
 .spec-value {
   font-family: var(--font-main);
-  font-size: 0.85rem;
+  font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 1px;
   color: white;
   flex-shrink: 0;
   text-align: right;
+  text-shadow: 0 0 16px rgba(255,255,255,0.35);
 }
 
 .config-sub-title {
@@ -623,9 +624,9 @@ body {
 
 .roles-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: 1fr;
   gap: 20px;
-  max-width: 1200px;
+  max-width: 700px;
   margin: 0 auto 50px;
   padding: 0 60px;
 }
@@ -633,7 +634,7 @@ body {
 .role-card {
   background: rgba(255,255,255,0.03);
   border: 1px solid rgba(255,255,255,0.08);
-  padding: 28px;
+  padding: 32px;
   transition: all 0.3s;
 }
 
@@ -646,55 +647,57 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 18px;
-  padding-bottom: 15px;
+  margin-bottom: 22px;
+  padding-bottom: 18px;
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
 .role-name {
   font-family: var(--font-main);
-  font-size: 0.95rem;
+  font-size: 1.15rem;
   letter-spacing: 2px;
   color: white;
+  text-shadow: 0 0 16px rgba(255,255,255,0.3);
 }
 
 .role-count {
   font-family: var(--font-main);
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   letter-spacing: 1px;
-  color: rgba(255,255,255,0.5);
-  background: rgba(255,255,255,0.06);
-  padding: 4px 10px;
+  color: white;
+  background: rgba(255,255,255,0.1);
+  padding: 5px 12px;
 }
 
 .role-specs {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 14px;
 }
 
 .role-spec {
   display: flex;
   justify-content: space-between;
   gap: 12px;
-  font-size: 0.8rem;
+  font-size: 0.95rem;
 }
 
 .role-spec-label {
-  color: rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.55);
   font-weight: 300;
 }
 
 .role-spec-value {
+  font-family: var(--font-main);
   color: white;
-  font-weight: 600;
+  font-weight: 700;
   text-align: right;
   flex-shrink: 0;
 }
 
 @media (max-width: 900px) {
-  .config-layout { grid-template-columns: 1fr; padding: 0 25px; }
-  .roles-grid { padding: 0 25px; grid-template-columns: 1fr; }
+  .config-layout { padding: 0 25px; }
+  .roles-grid { padding: 0 25px; }
 }
 
 /* ===== ABOUT CARDS ===== */
