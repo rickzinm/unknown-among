@@ -300,10 +300,9 @@ body {
 }
 
 .hero-logo {
-  width: 85%;
-  height: 85%;
+  width: 92%;
+  height: 92%;
   object-fit: contain;
-  border-radius: 50%;
   z-index: 2;
   animation: logoGlow 3s ease-in-out infinite;
   filter: drop-shadow(0 0 20px rgba(255,255,255,0.4));
