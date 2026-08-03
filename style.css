@@ -563,6 +563,140 @@ body {
   line-height: 1.7;
 }
 
+/* ===== CONFIG PAGE ===== */
+.config-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.spec-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.spec-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 13px 16px;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+}
+
+.spec-item:hover {
+  border-color: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.03);
+}
+
+.spec-label {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.5);
+  font-weight: 300;
+}
+
+.spec-value {
+  font-family: var(--font-main);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.config-sub-title {
+  font-family: var(--font-main);
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  color: rgba(255,255,255,0.4);
+  text-align: center;
+  margin: 60px 0 30px;
+}
+
+.config-sub-title:first-of-type { margin-top: 0; }
+
+.roles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto 50px;
+  padding: 0 60px;
+}
+
+.role-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 28px;
+  transition: all 0.3s;
+}
+
+.role-card:hover {
+  background: rgba(255,255,255,0.06);
+  border-color: rgba(255,255,255,0.2);
+}
+
+.role-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 18px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.role-name {
+  font-family: var(--font-main);
+  font-size: 0.95rem;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.role-count {
+  font-family: var(--font-main);
+  font-size: 0.65rem;
+  letter-spacing: 1px;
+  color: rgba(255,255,255,0.5);
+  background: rgba(255,255,255,0.06);
+  padding: 4px 10px;
+}
+
+.role-specs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.role-spec {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.8rem;
+}
+
+.role-spec-label {
+  color: rgba(255,255,255,0.4);
+  font-weight: 300;
+}
+
+.role-spec-value {
+  color: white;
+  font-weight: 600;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .config-layout { grid-template-columns: 1fr; padding: 0 25px; }
+  .roles-grid { padding: 0 25px; grid-template-columns: 1fr; }
+}
+
 /* ===== ABOUT CARDS ===== */
 .about-grid {
   display: grid;

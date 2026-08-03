@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ㇲ Hexer Among Us — Configurações</title>
+  <meta name="description" content="Configurações padrão de sala do grupo Hexer Among Us: impostores, tripulantes, reuniões, tarefas e todas as funções especiais." />
+  <link rel="canonical" href="https://hexer-amongus.site/config.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Hexer Among Us" />
+  <meta property="og:title" content="Configurações de Sala — Hexer Among Us" />
+  <meta property="og:description" content="Configurações padrão de sala do grupo Hexer Among Us: impostores, tripulantes, reuniões, tarefas e todas as funções especiais." />
+  <meta property="og:url" content="https://hexer-amongus.site/config.html" />
+  <meta property="og:image" content="https://hexer-amongus.site/logo.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Configurações de Sala — Hexer Among Us" />
+  <meta name="twitter:description" content="Configurações padrão de sala do grupo Hexer Among Us." />
+  <meta name="twitter:image" content="https://hexer-amongus.site/logo.png" />
+
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Metal+Mania&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Névoa de fundo -->
+  <div class="fog"></div>
+
+  <!-- Partículas de fundo -->
+  <div class="particles" id="particles"></div>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="symbol">ㇲ</span>
+      <span class="nav-title">HEXER AMONG US</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html#sobre">SOBRE</a></li>
+      <li><a href="regras.html">REGRAS</a></li>
+      <li><a href="config.html">CONFIG</a></li>
+      <li><a href="index.html#membros">MEMBROS</a></li>
+      <li><a href="index.html#triagem" class="nav-cta">ENTRAR</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- CONFIGURAÇÕES GERAIS -->
+  <section class="section" id="config-geral">
+    <img src="crewmates/red.svg" alt="" class="crewmate-decor" style="top:10px; left:1%; --cm-w:170px; --cm-w-m:90px; --cm-rot:-9deg; --cm-delay:0.2s;">
+    <img src="crewmates/black.svg" alt="" class="crewmate-decor" style="top:5px; right:1%; --cm-w:170px; --cm-w-m:90px; --cm-rot:9deg; --cm-delay:0.9s;">
+
+    <a href="index.html" class="back-link">← VOLTAR AO INÍCIO</a>
+
+    <div class="section-header">
+      <span class="section-tag">PADRÃO HEXER</span>
+      <h2 class="section-title">CONFIGURAÇÕES DE SALA</h2>
+      <div class="title-line"></div>
+      <p class="section-desc">Sala padrão para <strong>15 jogadores</strong>. Use essa configuração em todas as partidas do grupo.</p>
+    </div>
+
+    <div class="config-layout">
+      <div class="triagem-block reveal">
+        <div class="block-header">
+          <span class="block-icon">⬡</span>
+          <h3>IMPOSTORES</h3>
+        </div>
+        <div class="spec-list">
+          <div class="spec-item"><span class="spec-label">Número de impostores</span><span class="spec-value">3</span></div>
+          <div class="spec-item"><span class="spec-label">Abate</span><span class="spec-value">15,0s</span></div>
+          <div class="spec-item"><span class="spec-label">Visão</span><span class="spec-value">1,75x</span></div>
+          <div class="spec-item"><span class="spec-label">Distância de abate</span><span class="spec-value">Média</span></div>
+        </div>
+      </div>
+
+      <div class="triagem-block reveal">
+        <div class="block-header">
+          <span class="block-icon">⬡</span>
+          <h3>TRIPULANTES</h3>
+        </div>
+        <div class="spec-list">
+          <div class="spec-item"><span class="spec-label">Velocidade</span><span class="spec-value">1,75x</span></div>
+          <div class="spec-item"><span class="spec-label">Visão</span><span class="spec-value">1,5x</span></div>
+        </div>
+      </div>
+
+      <div class="triagem-block reveal">
+        <div class="block-header">
+          <span class="block-icon">⬡</span>
+          <h3>REUNIÕES</h3>
+        </div>
+        <div class="spec-list">
+          <div class="spec-item"><span class="spec-label">N° Emergência</span><span class="spec-value">3</span></div>
+          <div class="spec-item"><span class="spec-label">Espera (reunião)</span><span class="spec-value">15s</span></div>
+          <div class="spec-item"><span class="spec-label">Tempo de discussão</span><span class="spec-value">45s</span></div>
+          <div class="spec-item"><span class="spec-label">Tempo de votação</span><span class="spec-value">15s</span></div>
+          <div class="spec-item"><span class="spec-label">Votos anônimos</span><span class="spec-value">Sim</span></div>
+          <div class="spec-item"><span class="spec-label">Confirmar ejeções</span><span class="spec-value">Sim</span></div>
+        </div>
+      </div>
+
+      <div class="triagem-block reveal">
+        <div class="block-header">
+          <span class="block-icon">⬡</span>
+          <h3>TAREFAS</h3>
+        </div>
+        <div class="spec-list">
+          <div class="spec-item"><span class="spec-label">Atualizar tarefas</span><span class="spec-value">Reuniões</span></div>
+          <div class="spec-item"><span class="spec-label">Tarefas comuns</span><span class="spec-value">1</span></div>
+          <div class="spec-item"><span class="spec-label">Tarefas longas</span><span class="spec-value">1</span></div>
+          <div class="spec-item"><span class="spec-label">Tarefas curtas</span><span class="spec-value">2</span></div>
+          <div class="spec-item"><span class="spec-label">Tarefas visuais</span><span class="spec-value">Não</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONFIGURAÇÃO DAS FUNÇÕES -->
+  <section class="section dark-section" id="config-funcoes">
+    <img src="crewmates/purple.svg" alt="" class="crewmate-decor" style="top:10px; left:1%; --cm-w:170px; --cm-w-m:90px; --cm-rot:-8deg; --cm-delay:0.5s;">
+    <img src="crewmates/yellow.svg" alt="" class="crewmate-decor" style="top:5px; right:1%; --cm-w:170px; --cm-w-m:90px; --cm-rot:8deg; --cm-delay:1.3s;">
+
+    <div class="section-header">
+      <span class="section-tag">FUNÇÕES ESPECIAIS</span>
+      <h2 class="section-title">CONFIGURAÇÃO DAS FUNÇÕES</h2>
+      <div class="title-line"></div>
+    </div>
+
+    <h3 class="config-sub-title">FUNÇÕES DE TRIPULANTES</h3>
+    <div class="roles-grid">
+      <div class="role-card">
+        <div class="role-card-header">
+          <span class="role-name">CIENTISTA</span>
+          <span class="role-count">1</span>
+        </div>
+        <div class="role-specs">
+          <div class="role-spec"><span class="role-spec-label">Espera (vitals)</span><span class="role-spec-value">5s</span></div>
+          <div class="role-spec"><span class="role-spec-label">Bateria</span><span class="role-spec-value">30s</span></div>
+        </div>
+      </div>
+
+      <div class="role-card">
+        <div class="role-card-header">
+          <span class="role-name">ANJO</span>
+          <span class="role-count">3</span>
+        </div>
+        <div class="role-specs">
+          <div class="role-spec"><span class="role-spec-label">Espera</span><span class="role-spec-value">35s</span></div>
+          <div class="role-spec"><span class="role-spec-label">Duração</span><span class="role-spec-value">30s</span></div>
+          <div class="role-spec"><span class="role-spec-label">Proteção visível a impostores</span><span class="role-spec-value">Não</span></div>
+        </div>
+      </div>
+
+      <div class="role-card">
+        <div class="role-card-header">
+          <span class="role-name">ENGENHEIRO</span>
+          <span class="role-count">2</span>
+        </div>
+        <div class="role-specs">
+          <div class="role-spec"><span class="role-spec-label">Espera</span><span class="role-spec-value">10s</span></div>
+          <div class="role-spec"><span class="role-spec-label">Duração</span><span class="role-spec-value">50s</span></div>
+        </div>
+      </div>
+
+      <div class="role-card">
+        <div class="role-card-header">
+          <span class="role-name">BARULHENTO</span>
+          <span class="role-count">2</span>
+        </div>
+        <div class="role-specs">
+          <div class="role-spec"><span class="role-spec-label">Alerta aos impostores</span><span class="role-spec-value">Sim</span></div>
+          <div class="role-spec"><span class="role-spec-label">Duração</span><span class="role-spec-value">8s</span></div>
+        </div>
+      </div>
+
+      <div class="role-card">
+        <div class="role-card-header">
+          <span class="role-name">LOCALIZADOR</span>
+          <span class="role-count">1</span>
+        </div>
+        <div class="role-specs">
+          <div class="role-spec"><span class="role-spec-label">Recarga</span><span class="role-spec-value">10s</span></div>
+          <div class="role-spec"><span class="role-spec-label">Atraso</span><span class="role-spec-value">0s</span></div>
+          <div class="role-spec"><span class="role-spec-label">Duração</span><span class="role-spec-value">45s</span></div>
+        </div>
+      </div>
+
+      <div class="role-card">
+        <div class="role-card-header">
+          <span class="role-name">DETETIVE</span>
+          <span class="role-count">1</span>
+        </div>
+        <div class="role-specs">
+          <div class="role-spec"><span class="role-spec-label">Suspeitos por caso</span><span class="role-spec-value">3</span></div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="config-sub-title">FUNÇÕES DE IMPOSTORES</h3>
+    <div class="roles-grid">
+      <div class="role-card">
+        <div class="role-card-header">
+          <span class="role-name">METAMORFO</span>
+          <span class="role-count">1</span>
+        </div>
+        <div class="role-specs">
+          <div class="role-spec"><span class="role-spec-label">Deixar pistas</span><span class="role-spec-value">Sim</span></div>
+          <div class="role-spec"><span class="role-spec-label">Duração</span><span class="role-spec-value">30s</span></div>
+          <div class="role-spec"><span class="role-spec-label">Espera</span><span class="role-spec-value">10s</span></div>
+        </div>
+      </div>
+
+      <div class="role-card">
+        <div class="role-card-header">
+          <span class="role-name">ESPECTRO</span>
+          <span class="role-count">1</span>
+        </div>
+        <div class="role-specs">
+          <div class="role-spec"><span class="role-spec-label">Duração</span><span class="role-spec-value">40s</span></div>
+          <div class="role-spec"><span class="role-spec-label">Espera</span><span class="role-spec-value">10s</span></div>
+        </div>
+      </div>
+
+      <div class="role-card">
+        <div class="role-card-header">
+          <span class="role-name">VÍBORA</span>
+          <span class="role-count">1</span>
+        </div>
+        <div class="role-specs">
+          <div class="role-spec"><span class="role-spec-label">Tempo de dissolução</span><span class="role-spec-value">10s</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <img src="crewmates/green.svg" alt="" class="crewmate-decor" style="top:10px; left:3%; --cm-w:120px; --cm-w-m:64px; --cm-rot:-6deg; --cm-delay:0.7s;">
+    <img src="crewmates/amy.webp" alt="" class="crewmate-decor" style="top:10px; right:3%; --cm-w:110px; --cm-w-m:60px; --cm-rot:7deg; --cm-delay:1.6s;">
+    <div class="footer-symbol">ㇲ</div>
+    <div class="footer-content">
+      <p class="footer-name">HEXER AMONG US</p>
+      <p class="footer-copy">© 2026 · Todos os direitos reservados · Grupo Hexer Among Us</p>
+    </div>
+    <div class="footer-line"></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
