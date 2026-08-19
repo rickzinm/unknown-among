@@ -16,6 +16,9 @@
   <meta property="og:description" content="Regras do grupo Hexer Among Us e regras das partidas de Among Us." />
   <meta property="og:url" content="https://hexer-amongus.site/regras.html" />
   <meta property="og:image" content="https://hexer-amongus.site/logo.png" />
+  <meta property="og:image:width" content="800" />
+  <meta property="og:image:height" content="800" />
+  <meta property="og:image:alt" content="Logo do Hexer Among Us" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -38,6 +41,15 @@
 {
   "@context": "https://schema.org",
   "@graph": [
+    {
+      "@type": "ImageObject",
+      "@id": "https://hexer-amongus.site/#logo",
+      "url": "https://hexer-amongus.site/logo.png",
+      "contentUrl": "https://hexer-amongus.site/logo.png",
+      "width": 800,
+      "height": 800,
+      "caption": "Logo do Hexer Among Us"
+    },
     {
       "@type": "BreadcrumbList",
       "@id": "https://hexer-amongus.site/regras.html#breadcrumb",
@@ -68,6 +80,13 @@
       "about": {
         "@id": "https://hexer-amongus.site/#organization"
       },
+      "primaryImageOfPage": {
+        "@id": "https://hexer-amongus.site/#logo"
+      },
+      "image": {
+        "@id": "https://hexer-amongus.site/#logo"
+      },
+      "thumbnailUrl": "https://hexer-amongus.site/logo.png",
       "breadcrumb": {
         "@id": "https://hexer-amongus.site/regras.html#breadcrumb"
       }

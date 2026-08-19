@@ -1,0 +1,8 @@
+# Imagens decorativas: o Google pode rastrear (para enxergar esta regra),
+# mas nao deve indexa-las nem usa-las como miniatura nos resultados.
+/crewmates/*
+  X-Robots-Tag: noindex
+
+# A logo e a imagem oficial do site nos resultados de busca.
+/logo.png
+  X-Robots-Tag: all
