@@ -1,6 +1,15 @@
-# Imagens decorativas: o Google pode rastrear (para enxergar esta regra),
-# mas nao deve indexa-las nem usa-las como miniatura nos resultados.
+# Miniatura da busca: a logo deve ser a unica imagem indexavel do site.
+# Todo o resto e arte decorativa ou icone do jogo, sem valor proprio em
+# busca, e so competiria com a logo pela miniatura nos resultados.
+# Rastreavel de proposito: o Google precisa ler o cabecalho para obedecer.
+
 /crewmates/*
+  X-Robots-Tag: noindex
+
+/img/*
+  X-Robots-Tag: noindex
+
+/roles/*
   X-Robots-Tag: noindex
 
 # A logo e a imagem oficial do site nos resultados de busca.
