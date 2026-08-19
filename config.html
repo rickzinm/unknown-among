@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ㇲ Hexer Among Us — Configurações</title>
-  <meta name="description" content="Configurações padrão de sala do grupo Hexer Among Us: impostores, tripulantes, reuniões, tarefas e todas as funções especiais." />
+  <title>Configurações de Sala Among Us para 15 Jogadores — Hexer Among Us</title>
+  <meta name="description" content="Configuração de sala Among Us para 15 jogadores: impostores, tripulantes, reuniões, tarefas e todas as funções especiais — Cientista, Anjo, Detetive, Juiz, Metamorfo, Víbora e mais." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="https://hexer-amongus.site/config.html" />
 
   <!-- Open Graph -->
@@ -12,7 +13,7 @@
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:site_name" content="Hexer Among Us" />
   <meta property="og:title" content="Configurações de Sala — Hexer Among Us" />
-  <meta property="og:description" content="Configurações padrão de sala do grupo Hexer Among Us: impostores, tripulantes, reuniões, tarefas e todas as funções especiais." />
+  <meta property="og:description" content="Configurações padrão de sala do grupo Hexer Among Us: impostores, tripulantes, reuniões, tarefas e todas as funções especiais, incluindo o novo Juiz." />
   <meta property="og:url" content="https://hexer-amongus.site/config.html" />
   <meta property="og:image" content="https://hexer-amongus.site/logo.png" />
 
@@ -31,6 +32,49 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Metal+Mania&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Dados estruturados (Schema.org) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://hexer-amongus.site/config.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://hexer-amongus.site/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Configurações de sala"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://hexer-amongus.site/config.html#webpage",
+      "url": "https://hexer-amongus.site/config.html",
+      "name": "Configurações de Sala Among Us para 15 Jogadores — Hexer Among Us",
+      "description": "Configuração padrão de sala do Hexer Among Us para 15 jogadores, incluindo todas as funções especiais de tripulantes e impostores.",
+      "inLanguage": "pt-BR",
+      "isPartOf": {
+        "@id": "https://hexer-amongus.site/#website"
+      },
+      "about": {
+        "@id": "https://hexer-amongus.site/#organization"
+      },
+      "breadcrumb": {
+        "@id": "https://hexer-amongus.site/config.html#breadcrumb"
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 
@@ -143,6 +187,7 @@
     <div class="roles-grid">
       <div class="role-card">
         <div class="role-card-header">
+          <img src="roles/cientista.webp" alt="" class="role-icon" width="46" height="46" loading="lazy" />
           <span class="role-name">CIENTISTA</span>
           <span class="role-count">1</span>
         </div>
@@ -154,6 +199,7 @@
 
       <div class="role-card">
         <div class="role-card-header">
+          <img src="roles/anjo.webp" alt="" class="role-icon" width="46" height="46" loading="lazy" />
           <span class="role-name">ANJO</span>
           <span class="role-count">3</span>
         </div>
@@ -166,6 +212,7 @@
 
       <div class="role-card">
         <div class="role-card-header">
+          <img src="roles/engenheiro.webp" alt="" class="role-icon" width="46" height="46" loading="lazy" />
           <span class="role-name">ENGENHEIRO</span>
           <span class="role-count">2</span>
         </div>
@@ -177,6 +224,7 @@
 
       <div class="role-card">
         <div class="role-card-header">
+          <img src="roles/barulhento.webp" alt="" class="role-icon" width="46" height="46" loading="lazy" />
           <span class="role-name">BARULHENTO</span>
           <span class="role-count">2</span>
         </div>
@@ -188,6 +236,7 @@
 
       <div class="role-card">
         <div class="role-card-header">
+          <img src="roles/localizador.webp" alt="" class="role-icon" width="46" height="46" loading="lazy" />
           <span class="role-name">LOCALIZADOR</span>
           <span class="role-count">1</span>
         </div>
@@ -200,6 +249,7 @@
 
       <div class="role-card">
         <div class="role-card-header">
+          <img src="roles/detetive.webp" alt="" class="role-icon" width="46" height="46" loading="lazy" />
           <span class="role-name">DETETIVE</span>
           <span class="role-count">1</span>
         </div>
@@ -207,12 +257,26 @@
           <div class="role-spec"><span class="role-spec-label">Suspeitos por caso</span><span class="role-spec-value">3</span></div>
         </div>
       </div>
+
+      <div class="role-card">
+        <div class="role-card-header">
+          <img src="roles/juiz.webp" alt="" class="role-icon" width="46" height="46" loading="lazy" />
+          <span class="role-name">JUIZ</span>
+          <span class="role-count">1</span>
+        </div>
+        <div class="role-specs">
+          <div class="role-spec"><span class="role-spec-label">Tarefas para desbloquear</span><span class="role-spec-value">50%</span></div>
+          <div class="role-spec"><span class="role-spec-label">Usos por partida</span><span class="role-spec-value">1</span></div>
+        </div>
+        <p class="role-desc">Ao concluir <strong>50% das tarefas</strong>, o Juiz libera a habilidade <strong>Anular</strong>: durante uma reunião ele ejeta o jogador escolhido ignorando todos os votos — mesmo que a sala inteira tenha pulado. Se o alvo não for impostor, quem é ejetado é o próprio Juiz.</p>
+      </div>
     </div>
 
     <h3 class="config-sub-title">FUNÇÕES DE IMPOSTORES</h3>
     <div class="roles-grid">
       <div class="role-card">
         <div class="role-card-header">
+          <img src="roles/metamorfo.webp" alt="" class="role-icon" width="46" height="46" loading="lazy" />
           <span class="role-name">METAMORFO</span>
           <span class="role-count">1</span>
         </div>
@@ -225,6 +289,7 @@
 
       <div class="role-card">
         <div class="role-card-header">
+          <img src="roles/espectro.webp" alt="" class="role-icon" width="46" height="46" loading="lazy" />
           <span class="role-name">ESPECTRO</span>
           <span class="role-count">1</span>
         </div>
@@ -236,6 +301,7 @@
 
       <div class="role-card">
         <div class="role-card-header">
+          <img src="roles/vibora.webp" alt="" class="role-icon" width="46" height="46" loading="lazy" />
           <span class="role-name">VÍBORA</span>
           <span class="role-count">1</span>
         </div>
