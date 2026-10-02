@@ -36,6 +36,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Metal+Mania&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 
+  <!-- Tela de carregamento: só aparece na primeira página aberta na visita -->
+  <script>
+    try { if (!sessionStorage.getItem('hexer-intro')) document.documentElement.classList.add('loading'); } catch (e) {}
+  </script>
+
   <!-- Dados estruturados (Schema.org) -->
   <script type="application/ld+json">
 {
@@ -103,6 +108,11 @@
   </script>
 </head>
 <body>
+
+  <!-- Tela de carregamento -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <img src="logo.png" alt="" class="loader-logo" />
+  </div>
 
   <!-- Névoa de fundo -->
   <div class="fog"></div>

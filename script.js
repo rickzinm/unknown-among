@@ -85,7 +85,7 @@ document.querySelectorAll('.about-card, .rule-item, .tier, .reveal').forEach(el 
 const heroTitle = document.querySelector('.hero-title .line-1');
 if (heroTitle) {
   setInterval(() => {
-    if (Math.random() < 0.15) {
+    if (Math.random() < 0.15 && !document.documentElement.classList.contains('loading')) {
       heroTitle.style.animation = 'none';
       heroTitle.offsetHeight; // reflow
       heroTitle.style.animation = 'glitch 0.3s ease';
@@ -175,14 +175,67 @@ window.addEventListener('scroll', () => {
   });
 });
 
-// ===== HERO ENTRANCE =====
-window.addEventListener('load', () => {
-  document.body.style.opacity = '0';
-  document.body.style.transition = 'opacity 0.5s ease';
-  setTimeout(() => {
-    document.body.style.opacity = '1';
-  }, 100);
-});
+// ===== TELA DE CARREGAMENTO / HERO ENTRANCE =====
+const root = document.documentElement;
+const loader = document.getElementById('loader');
+
+if (loader && root.classList.contains('loading')) {
+  try { sessionStorage.setItem('hexer-intro', '1'); } catch (e) {}
+
+  const MIN_TIME = 2600; // tempo para a logo aparecer por completo
+  const MAX_TIME = 7000; // nunca segura o visitante além disso
+
+  let pageLoaded = document.readyState === 'complete';
+  let introDone = false;
+  let hidden = false;
+
+  const hideLoader = () => {
+    if (hidden) return;
+    hidden = true;
+    loader.classList.add('hide');
+    root.classList.remove('loading');
+    loader.addEventListener('transitionend', (e) => {
+      if (e.target === loader) loader.remove();
+    });
+  };
+
+  const tryHide = () => {
+    if (pageLoaded && introDone) hideLoader();
+  };
+
+  const startIntro = () => {
+    loader.classList.add('show');
+    setTimeout(() => {
+      introDone = true;
+      tryHide();
+    }, MIN_TIME);
+  };
+
+  // Só começa a animação com a logo já carregada, para ela não "pipocar" no meio
+  const loaderLogo = loader.querySelector('.loader-logo');
+  if (loaderLogo.complete) {
+    startIntro();
+  } else {
+    loaderLogo.addEventListener('load', startIntro, { once: true });
+    loaderLogo.addEventListener('error', startIntro, { once: true });
+  }
+
+  window.addEventListener('load', () => {
+    pageLoaded = true;
+    tryHide();
+  });
+  setTimeout(hideLoader, MAX_TIME);
+} else {
+  if (loader) loader.remove();
+
+  window.addEventListener('load', () => {
+    document.body.style.opacity = '0';
+    document.body.style.transition = 'opacity 0.5s ease';
+    setTimeout(() => {
+      document.body.style.opacity = '1';
+    }, 100);
+  });
+}
 
 // ===== BUTTON RIPPLE =====
 document.querySelectorAll('.btn').forEach(btn => {
